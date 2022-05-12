@@ -1,0 +1,79 @@
+[
+ {
+   "TITLE": "Stage duration",
+   "DESCRIPTION": "The average duration of each life cycle stage",
+   "FORMULA": "Average[Stage duration]",
+   "UNIT_OF_MEASURE": "Time",
+   "TYPE": "Stage metric"
+ },
+ {
+   "TITLE": "Life cycle duration",
+   "DESCRIPTION": "The sum of all stages for an LCM object",
+   "FORMULA": "Sum[Stage duration]",
+   "UNIT_OF_MEASURE": "Time",
+   "TYPE": "Stage metric"
+ },
+ {
+   "TITLE": "General availability (GA)",
+   "DESCRIPTION": "The start of LCM object utilization",
+   "FORMULA": "[Operational Approval date]",
+   "UNIT_OF_MEASURE": "Time",
+   "TYPE": "Decision gate measure"
+ },
+ {
+   "TITLE": "End-of-life (EOL)",
+   "DESCRIPTION": "The end of LCM object utilization",
+   "FORMULA": "[Deactivation Approval date]",
+   "UNIT_OF_MEASURE": "Time",
+   "TYPE": "Decision gate measure"
+ },
+ {
+   "TITLE": "Decision gate count",
+   "DESCRIPTION": "Decision gate pass/fail count",
+   "FORMULA": "Sum[Decision Gate]",
+   "UNIT_OF_MEASURE": "Number",
+   "TYPE": "Decision gate metric"
+ },
+ {
+   "TITLE": "Decision gate rate",
+   "DESCRIPTION": "Decision gate pass/fail ratio",
+   "FORMULA": "[number of gate pass or fail] / [number of gates]",
+   "UNIT_OF_MEASURE": "Ratio",
+   "TYPE": "Decision gate metric"
+ },
+ {
+   "TITLE": "Life cycle impact assessment (LCIA)",
+   "DESCRIPTION": "Measures the impact (such as expense) associated with each stage of the LCM object",
+   "FORMULA": "Sum[Impact] by [Stage]",
+   "UNIT_OF_MEASURE": "Money",
+   "TYPE": "Life cycle metric"
+ },
+ {
+   "TITLE": "Life cycle inventory (LCI)",
+   "DESCRIPTION": "Tracks all inputs and outputs of an LCM object",
+   "FORMULA": "Sum[Input] or Sum[Output]",
+   "UNIT_OF_MEASURE": "Number",
+   "TYPE": "Life cycle metric"
+ },
+ {
+   "TITLE": "Total cost of ownership (TCO)",
+   "DESCRIPTION": "Measures the impact (such as expense) associated with the LCM object",
+   "FORMULA": "Sum[Cost]",
+   "UNIT_OF_MEASURE": "Money",
+   "TYPE": "Life cycle costing (LCC)"
+ },
+ {
+   "TITLE": "Return on investment (ROI)",
+   "DESCRIPTION": "Measures total economic performance over the lifetime of an LCM object",
+   "FORMULA": "Sum[Profit]",
+   "UNIT_OF_MEASURE": "Money",
+   "TYPE": "Life cycle costing (LCC)"
+ },
+ {
+   "TITLE": "Net present value (NPV)",
+   "DESCRIPTION": "The present value of cash flows at the required rate of return compared to your initial investment",
+   "FORMULA": "Sum[Cash Flow] - Sum[Investment]",
+   "UNIT_OF_MEASURE": "Money",
+   "TYPE": "Life cycle costing (LCC)"
+ }
+]
